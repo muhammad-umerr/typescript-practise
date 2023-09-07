@@ -9,24 +9,16 @@ var lastOperation = -1;
 addEventListener("click", function (element) {
     if (inputDisplay == null)
         return 1;
-    if (element.target == btnAdd) {
-        calculateTotal();
+    calculateTotal();
+    if (element.target == btnAdd)
         lastOperation = 0;
-    }
-    else if (element.target == btnMinus) {
-        calculateTotal();
+    else if (element.target == btnMinus)
         lastOperation = 1;
-    }
-    else if (element.target == btnMultiply) {
-        calculateTotal();
+    else if (element.target == btnMultiply)
         lastOperation = 2;
-    }
-    else if (element.target == btnDivide) {
-        calculateTotal();
+    else if (element.target == btnDivide)
         lastOperation = 3;
-    }
     else if (element.target == btnResult) {
-        calculateTotal();
         inputDisplay.value = Total.toString();
         lastOperation = -1;
     }
