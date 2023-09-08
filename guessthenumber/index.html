@@ -7,10 +7,26 @@
     <title>Guess The Number</title>
 </head>
 <body>
-    <section class="mainSection">
-        <h1>Guess The Number</h1>
-        <p class="textStart">Click start and guess the correct number within the given range to earn a point.</p>
-        <button id="buttonStart">Start</button>
-    </section>
+    <div class="main">
+        <div class="mainSection">
+            <h1>Guess The Number</h1>
+            <p>Click start and guess the correct number within the given range to earn a point.</p>
+            <button class="buttonStart" onclick="ClickStart()">Start</button>
+        </div>
+        <!-- <div class="mainSection2">
+            <h1>Guess The Number</h1>
+            <p>The number is between A & B</p>
+            <input type="text" placeholder="" class="inputGuess">
+            <button class="buttonGuess" onclick="ClickGuess()">Guess</button>
+        </div> -->
+        <!-- <div class="mainSection3">
+            <h1>Guess The Number</h1>
+            <p class="textHint">You guessed Correct!</p>
+            <h2 class="textAnswer">Correct Answer: ##</h2>
+            <button class="buttonRetry" onclick="ClickRetry()">Retry</button>
+        </div> -->
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 </html>
